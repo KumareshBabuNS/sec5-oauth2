@@ -1,10 +1,11 @@
-security:
-  oauth2:
-    client:
-      registrations:
-        github:
-          client-id: ${GITHUB_CLIENT_ID}
-          client-secret: ${GITHUB_CLIENT_SECRET}
-        facebook:
-          client-id: ${FACEBOOK_CLIENT_ID}
-          client-secret: ${FACEBOOK_CLIENT_SECRET}
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: ${GITHUB_CLIENT_ID:ghclient}
+            client-secret: ${GITHUB_CLIENT_SECRET:ghsecret}
+          facebook:
+            client-id: ${FACEBOOK_CLIENT_ID:fbclient}
+            client-secret: ${FACEBOOK_CLIENT_SECRET:fbsecret}
