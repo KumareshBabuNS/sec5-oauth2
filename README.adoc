@@ -1,0 +1,13 @@
+= Spring Security 5 with OAuth2 login sample
+
+This application demonstrates how to use Spring Security 5's support
+for OAuth2 clients to login via either GitHub or Facebook.
+
+In order to run this application, be sure to set the following environment
+variables with the client IDs and secrets for your registered applications
+in GitHub and Facebook:
+
+ * `FACEBOOK_CLIENT_ID`
+ * `FACEBOOK_CLIENT_SECRET`
+ * `GITHUB_CLIENT_ID`
+ * `GITHUB_CLIENT_SECRET`
